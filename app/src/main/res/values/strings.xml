@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">IntelliHealth</string>
+    <string name="term_and_condition">By Continuing,you agree to our\nTerms &amp; Conditions.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login">LOGIN</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="Register">Register</string>
+    <string name="fullname">FullName</string>
+    <string name="fullName">FullName</string>
+    <string name="phone">Mobile Number</string>
+    <string name="verification">Verification</string>
+    <string name="resend"><u>Resend code</u></string>
+    <string name="congratulation">Congratulations</string>
+    <string name="verified">Your profile is\n Successfully Verified.</string>
+</resources>

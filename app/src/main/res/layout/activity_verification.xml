@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".Ui.Activities.VerificationActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/space200"
+            android:layout_height="100dp"
+            android:src="@drawable/logo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Take Control of your health today\n without visiting client"
+            android:textColor="@android:color/white"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:layout_centerInParent="true"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/ll_top"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:tint="@color/buttonColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_verified_user_24"/>
+
+        <TextView
+            android:id="@+id/veriTitle"
+            android:layout_marginTop="@dimen/space20"
+            android:layout_below="@id/ll_top"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/congratulation"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text18"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:gravity="center"
+            android:layout_marginTop="@dimen/space20"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/verified"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text18"
+            android:textStyle="bold"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_done"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg"
+            android:text="Done"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            android:layout_marginRight="70dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="@dimen/space20"/>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

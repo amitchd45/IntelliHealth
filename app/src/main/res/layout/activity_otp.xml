@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Ui.Activities.OtpActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/space200"
+            android:layout_height="100dp"
+            android:src="@drawable/logo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Take Control of your health today\n without visiting client"
+            android:textColor="@android:color/white"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:layout_centerInParent="true"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/veriTitle"
+        android:layout_marginTop="@dimen/space20"
+        android:layout_below="@id/ll_top"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/verification"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text18"
+        android:textAllCaps="true"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:id="@+id/ll_medium"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/veriTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/ll_top"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A verification code has been sent to the phone\n number +91875498547. Please \n enter the code blow"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text14"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/ll_medium"
+        android:id="@+id/verification_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="Enter your verification code"/>
+
+    <in.aabhasjindal.otptextview.OtpTextView
+        android:layout_marginTop="@dimen/space20"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/verification_note"
+        android:id="@+id/otp_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        app:height="40dp"
+        app:width="40dp"
+        app:bar_enabled="true"
+        app:bar_height="2dp"
+        app:length="4"
+        app:otp="1234"
+        app:otp_text_size="24dp"/>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_bg"
+        android:layout_below="@id/otp_view"
+        android:text="Submit"
+        android:textColor="@android:color/white"
+        android:textAllCaps="false"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="10dp"/>
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:padding="5dp"
+        android:layout_below="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="@string/resend"/>
+
+</RelativeLayout>

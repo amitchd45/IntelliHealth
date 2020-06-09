@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Ui.Activities.RegisterActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/space200"
+            android:layout_height="100dp"
+            android:src="@drawable/logo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Take Control of your health today\n without visiting client"
+            android:textColor="@android:color/white"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:layout_centerInParent="true"/>
+
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_below="@id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:padding="@dimen/space20"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Register"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text18" />
+
+        <EditText
+            android:inputType="text"
+            android:singleLine="true"
+            android:layout_marginTop="@dimen/space20"
+            android:layout_marginRight="@dimen/space20"
+            android:layout_marginLeft="@dimen/space20"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/et_bg"
+            android:hint="@string/fullName"
+            android:padding="10dp"
+            android:textColorHint="@android:color/white"/>
+
+        <EditText
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+            android:layout_marginTop="@dimen/space20"
+            android:layout_marginRight="@dimen/space20"
+            android:layout_marginLeft="@dimen/space20"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/et_bg"
+            android:hint="@string/email"
+            android:padding="10dp"
+            android:textColorHint="@android:color/white"/>
+
+        <EditText
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:layout_marginTop="@dimen/space20"
+            android:layout_marginRight="@dimen/space20"
+            android:layout_marginLeft="@dimen/space20"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/et_bg"
+            android:hint="@string/password"
+            android:padding="10dp"
+            android:textColorHint="@android:color/white"/>
+        <EditText
+            android:inputType="number"
+            android:singleLine="true"
+            android:layout_marginTop="@dimen/space20"
+            android:layout_marginRight="@dimen/space20"
+            android:layout_marginLeft="@dimen/space20"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/et_bg"
+            android:hint="@string/phone"
+            android:padding="10dp"
+            android:textColorHint="@android:color/white"/>
+
+        <Button
+            android:id="@+id/btn_signUp"
+            android:layout_marginTop="@dimen/space20"
+            android:layout_marginLeft="@dimen/space20"
+            android:layout_marginRight="@dimen/space20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_bg" />
+
+    </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account ? "
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/tv_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Login"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+</RelativeLayout>

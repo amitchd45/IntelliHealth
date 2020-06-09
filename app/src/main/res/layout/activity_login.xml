@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Ui.Activities.LoginActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/space200"
+            android:layout_height="100dp"
+            android:src="@drawable/logo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Take Control of your health today\n without visiting client"
+            android:textColor="@android:color/white"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:layout_centerInParent="true"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:padding="@dimen/space20"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text18" />
+
+        <EditText
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+            android:layout_marginTop="@dimen/space20"
+            android:layout_marginRight="@dimen/space20"
+            android:layout_marginLeft="@dimen/space20"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/et_bg"
+            android:hint="@string/email"
+            android:padding="10dp"
+            android:textColorHint="@android:color/white"/>
+
+        <EditText
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:layout_marginTop="@dimen/space20"
+            android:layout_marginRight="@dimen/space20"
+            android:layout_marginLeft="@dimen/space20"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/et_bg"
+            android:hint="@string/password"
+            android:padding="10dp"
+            android:textColorHint="@android:color/white"/>
+
+        <Button
+            android:id="@+id/btn_signIn"
+            android:layout_marginTop="@dimen/space20"
+            android:layout_marginLeft="@dimen/space20"
+            android:layout_marginRight="@dimen/space20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign In"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_bg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password ?"
+            android:textColor="@android:color/white"
+            android:padding="10dp"/>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/space2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don't Have an account ? "
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/tv_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Register"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
